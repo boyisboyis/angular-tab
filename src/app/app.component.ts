@@ -33,6 +33,10 @@ export class AppComponent implements AfterViewInit {
         label: 'Third Tab',
         template: this.tabThirdTmp,
       },
+      {
+        label: 'Third Tab',
+        templateName: 'defaultTemplate',
+      },
     ];
     this.cdr.detectChanges();
   }

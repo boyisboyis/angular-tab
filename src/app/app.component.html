@@ -1,4 +1,8 @@
-<app-example-dy-tab [tabs]="tabs"></app-example-dy-tab>
+<app-example-dy-tab [tabs]="tabs">
+  <ng-template #defaultTemplate>
+    Default tab
+  </ng-template>
+</app-example-dy-tab>
 <ng-template #tabThird>
   Third tab
 </ng-template>

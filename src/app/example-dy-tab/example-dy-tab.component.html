@@ -3,6 +3,9 @@
     <mat-tab [label]="tab.label">
       <ng-container *ngComponentOutlet="tab.component"></ng-container>
       <ng-container *ngTemplateOutlet="tab.template"></ng-container>
+      <ng-container *ngIf="tab.templateName">
+        <ng-container *ngTemplateOutlet="this[tab.templateName]"></ng-container>
+      </ng-container>
     </mat-tab>
   </ng-container>
 </mat-tab-group>
